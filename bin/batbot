@@ -1,0 +1,36 @@
+#!/usr/bin/env ruby
+
+require 'batbot'
+require 'optparse'
+
+options = {}
+
+opt_parser = OptionParser.new do |opt|
+  opt.banner = "Usage: opt_parser COMMAND [OPTIONS]"
+  opt.separator  ""
+  opt.separator  "Commands"
+  opt.separator  "     hello: say hello"
+  opt.separator  "     tweet: send a tweet"
+  opt.separator  ""
+  opt.separator  "Options"
+
+  opt.on("-e","--environment ENVIRONMENT","which environment you want server run") do |environment|
+    options[:environment] = environment
+  end
+
+  opt.on("-h","--help","help") do
+    puts opt_parser
+  end
+end
+
+opt_parser.parse!
+
+case ARGV[0]
+when "hello"
+  BatBot.hello
+when "tweet"
+  # TODO Actually send tweet
+  BatBot.tweet(ARGV[1])
+else
+  puts opt_parser
+end
