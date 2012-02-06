@@ -8,5 +8,5 @@ Gem::Specification.new do |s|
   s.email       = 'matt.west@kojilabs.com'
   s.files       = ["lib/batbot.rb"]
   s.homepage    = 'http://rubygems.org/gems/batbot'
-  s.executables << 'batbot '
+  s.executables << 'batbot'
 end

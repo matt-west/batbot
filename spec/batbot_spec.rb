@@ -5,7 +5,7 @@ describe "BatBot" do
   describe "hello" do
     it "should say hello" do
       STDOUT.should_receive(:puts).with("Hi Batman!")
-      BatBot::hello
+      BatBot.hello
     end
   end
   
