@@ -10,6 +10,7 @@ opt_parser = OptionParser.new do |opt|
   opt.separator  ""
   opt.separator  "Commands"
   opt.separator  "     hello: say hello"
+  opt.seperator  "     inspire: show me some nice designs"
   opt.separator  "     tweet: send a tweet"
   opt.separator  ""
   opt.separator  "Options"
@@ -31,6 +32,8 @@ when "hello"
 when "tweet"
   # TODO Actually send tweet
   BatBot.tweet(ARGV[1])
+when "inspire"
+  BatBot.inspire
 else
   puts opt_parser
 end
