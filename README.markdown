@@ -1,7 +1,7 @@
 # BatBot
 The Bat Computer's sidekick.
 
-Just a fun CLI.
+Basically just a collection of things that I need regularly.
 
 Functions:
 * inspire - launches random web design showcase site
