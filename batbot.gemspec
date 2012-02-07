@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'batbot'
-  s.version     = '0.0.0'
-  s.date        = '2011-02-06'
+  s.version     = '0.0.2'
+  s.date        = '2011-02-07'
   s.summary     = "BatBot"
   s.description = "The bat computer"
   s.authors     = ["Matt West"]

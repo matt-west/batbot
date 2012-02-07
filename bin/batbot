@@ -10,8 +10,8 @@ opt_parser = OptionParser.new do |opt|
   opt.separator  ""
   opt.separator  "Commands"
   opt.separator  "     hello: say hello"
-  opt.seperator  "     inspire: show me some nice designs"
-  opt.separator  "     tweet: send a tweet"
+  opt.separator  "     ip: show me my ip"
+  opt.separator  "     inspire: show me some nice designs"
   opt.separator  ""
   opt.separator  "Options"
 
@@ -29,9 +29,8 @@ opt_parser.parse!
 case ARGV[0]
 when "hello"
   BatBot.hello
-when "tweet"
-  # TODO Actually send tweet
-  BatBot.tweet(ARGV[1])
+when "ip"
+  BatBot.ip
 when "inspire"
   BatBot.inspire
 else
